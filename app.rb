@@ -24,4 +24,9 @@ class App < Sinatra::Base
     (params[:num1].to_i * params[:num2].to_i).to_s
   end
 
+  get "/testing/:main" do
+    puts request.params
+    puts params
+    puts "Done"
+end
 end
